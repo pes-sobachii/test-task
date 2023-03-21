@@ -23,7 +23,7 @@ const SliderWrapper = styled.div`
 	.swiper-pagination {
 		position: absolute;
 		top: 52%;
-		left: -1.5%;
+		left: -2%;
 	}
 	.swiper-pagination-bullet-active div {
 		background: white;
