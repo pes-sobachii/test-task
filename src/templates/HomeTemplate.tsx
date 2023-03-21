@@ -18,8 +18,7 @@ const HomeTemplate: React.FC<IHomeTemplateProps> = ({
 	const scrollRef = useRef<HTMLDivElement>(null)
 
 	const scrollDown = () =>
-		scrollRef.current &&
-		scrollRef.current.scrollIntoView({ behavior: 'smooth' })
+		scrollRef.current?.scrollIntoView({ behavior: 'smooth' })
 
 	return (
 		<div>

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link, useLocation } from 'react-router-dom'
 
 import ButtonsBlock from '../atoms/ButtonsBlock'
-import MainButton from '../atoms/MainButton'
+import Button from '../atoms/Button'
 import Heart from '../assets/icons/Heart.png'
 import Logo from '../assets/icons/spaceX.png'
 import Nav from '../molecules/Nav'
@@ -33,7 +33,7 @@ const Header = () => {
 					<Nav />
 					<ButtonsBlock gap={'10px'}>
 						<Link to={'/favourite'}>
-							<MainButton
+							<Button
 								py={'12px'}
 								px={'12px'}
 								bgcolor={
@@ -41,12 +41,12 @@ const Header = () => {
 								}
 							>
 								<img src={Heart} alt={'Favourites'} />
-							</MainButton>
+							</Button>
 						</Link>
 						<Link to={'#'}>
-							<MainButton py={'12px'} px={'33px'} bgcolor={'#D3EAFF'}>
+							<Button py={'12px'} px={'33px'} bgcolor={'#D3EAFF'}>
 								Sign In
-							</MainButton>
+							</Button>
 						</Link>
 					</ButtonsBlock>
 				</Wrapper>

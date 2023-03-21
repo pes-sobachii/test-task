@@ -31,8 +31,8 @@ const StyledButton = styled('button')<Omit<IButton, 'children'>>`
 	}
 `
 
-const MainButton: React.FC<IButton> = ({ children, ...props }) => {
+const Button: React.FC<IButton> = ({ children, ...props }) => {
 	return <StyledButton {...props}>{children}</StyledButton>
 }
 
-export default MainButton
+export default Button

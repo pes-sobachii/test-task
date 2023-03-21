@@ -8,7 +8,7 @@ import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
 
-import StyledTitle from '../atoms/MainTitle'
+import Title from '../atoms/Title'
 import PaginationCircle from '../atoms/PaginationCircle'
 import MainSlide from '../molecules/MainSlide'
 import Anchor from '../atoms/Anchor'
@@ -44,11 +44,11 @@ const MainSlider: React.FC<ISliderProps> = ({ images, scrollDown }) => {
 
 	return (
 		<SliderWrapper>
-			<StyledTitle>
+			<Title>
 				<p>
 					the space is waiting for <span>you</span>
 				</p>
-			</StyledTitle>
+			</Title>
 			<Anchor onClick={scrollDown} />
 			<Swiper
 				loop={true}

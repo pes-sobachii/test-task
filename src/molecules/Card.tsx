@@ -2,12 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 
 import ButtonsBlock from '../atoms/ButtonsBlock'
-import MainButton from '../atoms/MainButton'
+import Button from '../atoms/Button'
 import Heart from '../assets/icons/Heart.png'
 import Delete from '../assets/icons/Delete.svg'
 import { ILaunch } from '../Types/Types'
 
-const StyledCard = styled.div`
+const CardWrapper = styled.div`
 	border: 1px solid #d3eaff;
 	text-align: center;
 	img {
@@ -24,7 +24,7 @@ const CardButtons = styled(ButtonsBlock)`
 	}
 `
 
-const StyledInfo = styled.div`
+const CardInfo = styled.div`
 	padding: 32px;
 
 	h3 {
@@ -59,26 +59,26 @@ interface ICardProps {
 
 const Card: React.FC<ICardProps> = ({ photo, data, type, onClick }) => {
 	return (
-		<StyledCard>
+		<CardWrapper>
 			<img src={photo} alt='poster' />
-			<StyledInfo>
+			<CardInfo>
 				<h3>{data.mission_name}</h3>
 				<p>{data.details || 'no data'.toUpperCase()}</p>
 				<CardButtons gap={'16px'}>
-					<MainButton bgcolor={'#D3EAFF'} py={'12px'}>
+					<Button bgcolor={'#D3EAFF'} py={'12px'}>
 						Buy
-					</MainButton>
-					<MainButton
+					</Button>
+					<Button
 						bgcolor={'#ECECEC'}
 						py={'12px'}
 						px={'12px'}
 						onClick={() => onClick(data.id)}
 					>
 						<img src={type === 'default' ? Heart : Delete} alt={'Favourites'} />
-					</MainButton>
+					</Button>
 				</CardButtons>
-			</StyledInfo>
-		</StyledCard>
+			</CardInfo>
+		</CardWrapper>
 	)
 }
 

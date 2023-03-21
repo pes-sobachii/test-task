@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import StyledTitle from '../atoms/MainTitle'
+import Title from '../atoms/Title'
 import MainSlide from '../molecules/MainSlide'
-import images from '../assets/images'
+import images from '../images'
 import Container from '../atoms/Container'
 import ClearAllBlock from '../molecules/ClearAllBlock'
 import CardFlex from '../organisms/CardFlex'
@@ -36,9 +36,9 @@ const FavouritesTemplate: React.FC<IFavouritesTemplateProps> = ({
 	return (
 		<div>
 			<Overflow>
-				<StyledTitle>
+				<Title>
 					<p>favourites</p>
-				</StyledTitle>
+				</Title>
 				<MainSlide src={images[2]} />
 			</Overflow>
 			<FavouritesWrapper>

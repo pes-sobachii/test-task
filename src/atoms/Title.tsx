@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const StyledTitle = styled.div`
+const Title = styled.div`
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -24,4 +24,4 @@ const StyledTitle = styled.div`
 	}
 `
 
-export default StyledTitle
+export default Title

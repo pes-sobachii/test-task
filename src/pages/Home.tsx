@@ -2,7 +2,7 @@ import React from 'react'
 import { useQuery } from '@apollo/client'
 import { useRecoilState, useSetRecoilState } from 'recoil'
 
-import images from '../assets/images'
+import images from '../images'
 import { launchesAtom } from '../recoil/atoms/launchesAtom'
 import { favouritesAtom } from '../recoil/atoms/favouritesAtom'
 import HomeTemplate from '../templates/HomeTemplate'
